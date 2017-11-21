@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./", // enables absolute path imports
+    "paths": { // define absolute path mappings
+      "@src/*": ["src/*"] // will enable -> import { ... } from '@src/components'
+      // in webpack you need to add -> resolve: { alias: { '@src': PATH_TO_SRC } }
+    },
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "declaration": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": true,
+    "importHelpers": true,
+    "noEmitHelpers": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "pretty": true,
+    "target": "es2015",
+    "jsx": "react"
+  },
+  "include": [
+    "src/**/*",
+    "node_modules/electron-prebuilt-compile/node_modules/electron"
+  ],
+  "types": ["typePatches"]
+}

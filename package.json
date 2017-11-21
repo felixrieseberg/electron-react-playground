@@ -1,0 +1,86 @@
+{
+  "name": "electron-react-playground",
+  "productName": "mynewshinything",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/es6-init.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "tslint --project tsconfig.json --type-check --force"
+  },
+  "keywords": [],
+  "author": "mail",
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "npm"
+      },
+      "electronWinstallerConfig": {
+        "name": "mynewshinything"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "mynewshinything"
+      }
+    }
+  },
+  "dependencies": {
+    "@types/electron-devtools-installer": "^2.0.2",
+    "@types/react-redux": "^5.0.12",
+    "electron-compile": "^6.4.2",
+    "electron-devtools-installer": "^2.2.1",
+    "electron-squirrel-startup": "^1.0.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-hot-loader": "^3.1.2",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-act": "^1.5.0",
+    "redux-observable": "^0.17.0",
+    "rxjs": "^5.5.2",
+    "tslib": "^1.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.52",
+    "@types/react": "^16.0.22",
+    "@types/react-dom": "^16.0.3",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "electron-compilers": "^5.9.0",
+    "electron-forge": "^4.1.2",
+    "electron-prebuilt-compile": "1.8.2-beta.2",
+    "tslint": "^5.8.0",
+    "typescript": "^2.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deanihansen/electron-react-playground.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deanihansen/electron-react-playground/issues"
+  },
+  "homepage": "https://github.com/deanihansen/electron-react-playground#readme"
+}

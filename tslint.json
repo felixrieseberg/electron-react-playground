@@ -1,0 +1,272 @@
+{
+    "extends": [
+      "tslint:latest",
+      "tslint-react",
+      "tslint-eslint-rules"
+    ],
+    "rules": {
+      "curly": false,
+      "eofline": false,
+      "align": [
+        true,
+        "parameters"
+      ],
+      "array-type": [
+        true,
+        "generic"
+      ],
+      "array-bracket-spacing": "always",
+      "arrow-parens": true,
+      "class-name": true,
+      "comment-format": [
+        false
+      ],
+      "indent": [
+        true,
+        "spaces"
+      ],
+      "max-line-length": [
+        true,
+        150
+      ],
+      "no-angle-bracket-type-assertion": true,
+      "no-consecutive-blank-lines": [
+        true,
+        2
+      ],
+      "no-trailing-whitespace": true,
+      "no-default-export": true,
+      "no-duplicate-variable": false,
+      "no-bitwise": false,
+      "no-var-keyword": true,
+      "no-var-requires": false,
+      "no-empty": true,
+      "no-empty-interface": true,
+      "no-unused-expression": false,
+      "no-unused-expression-chai": true,
+      "no-reference": true,
+      "no-use-before-declare": true,
+      "no-submodule-imports": [
+        false
+      ],
+      "no-implicit-dependencies": [
+        false
+      ],
+      "no-this-assignment": [
+        true,
+        {
+          "allow-destructuring": true
+        }
+      ],
+      "interface-name": [
+        false
+      ],
+      "object-literal-sort-keys": false,
+      "object-literal-key-quotes": [
+        true,
+        "as-needed"
+      ],
+      "only-arrow-functions": [
+        false
+      ],
+      "ordered-imports": [
+        true,
+        {
+          "import-sources-order": "lowercase-last",
+          "named-imports-order": "lowercase-last"
+        }
+      ],
+      "one-variable-per-declaration": [
+        false
+      ],
+      "one-line": [
+        false,
+        "check-else",
+        "check-whitespace",
+        "check-open-brace"
+      ],
+      "prefer-const": true,
+      "prefer-conditional-expression": false,
+      "quotemark": [
+        true,
+        "single",
+        "avoid-escape"
+      ],
+      "max-classes-per-file": [
+        false
+      ],
+      "semicolon": [
+        true,
+        "always"
+      ],
+      "switch-default": false,
+      "trailing-comma": [
+        false
+      ],
+      "typedef": [
+        true,
+        "parameter",
+        "property-declaration"
+      ],
+      "typeof-compare": true,
+      "typedef-whitespace": [
+        true,
+        {
+          "call-signature": "nospace",
+          "index-signature": "nospace",
+          "parameter": "nospace",
+          "property-declaration": "nospace",
+          "variable-declaration": "nospace"
+        }
+      ],
+      "variable-name": [
+        true,
+        "allow-leading-underscore",
+        "ban-keywords"
+      ],
+      "whitespace": [
+        true,
+        "check-branch",
+        "check-decl",
+        "check-operator",
+        "check-separator",
+        "check-type"
+      ],
+      "ban-types": [
+        true,
+        [
+          [
+            "Object",
+            "Avoid using the `Object` type. Did you mean `object`?"
+          ],
+          /*[
+            "Function",
+            "Avoid using the `Function` type. Prefer a specific function type, like `() => void`."
+          ],*/
+          [
+            "Boolean",
+            "Avoid using the `Boolean` type. Did you mean `boolean`?"
+          ],
+          [
+            "Number",
+            "Avoid using the `Number` type. Did you mean `number`?"
+          ],
+          [
+            "String",
+            "Avoid using the `String` type. Did you mean `string`?"
+          ],
+          [
+            "Symbol",
+            "Avoid using the `Symbol` type. Did you mean `symbol`?"
+          ]
+        ]
+      ],
+      "object-curly-spacing": true
+    },
+    "jsRules": {
+      "curly": false,
+      "eofline": false,
+      "align": [
+        true,
+        "parameters"
+      ],
+      "arrow-parens": true,
+      "class-name": true,
+      "comment-format": [
+        false
+      ],
+      "indent": [
+        true,
+        "spaces"
+      ],
+      "max-line-length": [
+        true,
+        150
+      ],
+      "no-console": [
+        true
+      ],
+      "no-consecutive-blank-lines": [
+        true,
+        2
+      ],
+      "no-trailing-whitespace": true,
+      "no-default-export": true,
+      "no-duplicate-variable": true,
+      "no-bitwise": false,
+      "no-var-keyword": true,
+      "no-var-requires": false,
+      "no-empty": true,
+      "no-empty-interface": false,
+      "no-unused-expression": false,
+      "no-unused-expression-chai": true,
+      "no-reference": true,
+      "no-use-before-declare": true,
+      "interface-name": [
+        false
+      ],
+      "object-literal-sort-keys": false,
+      "object-literal-key-quotes": [
+        true,
+        "as-needed"
+      ],
+      "only-arrow-functions": [
+        false
+      ],
+      "ordered-imports": [
+        true,
+        {
+          "import-sources-order": "lowercase-last",
+          "named-imports-order": "lowercase-last"
+        }
+      ],
+      "one-variable-per-declaration": [
+        false
+      ],
+      "no-parameter-properties": false,
+      "one-line": [
+        false,
+        "check-else",
+        "check-whitespace",
+        "check-open-brace"
+      ],
+      "prefer-const": true,
+      "prefer-conditional-expression": false,
+      "quotemark": [
+        true,
+        "single",
+        "avoid-escape"
+      ],
+      "max-classes-per-file": [
+        false
+      ],
+      "semicolon": [
+        true,
+        "always"
+      ],
+      "switch-default": false,
+      "trailing-comma": [
+        false
+      ],
+      "typeof-compare": true,
+      "variable-name": [
+        true,
+        "allow-leading-underscore",
+        "ban-keywords"
+      ],
+      "whitespace": [
+        true,
+        "check-branch",
+        "check-decl",
+        "check-operator",
+        "check-separator",
+        "check-type"
+      ],
+      "object-curly-spacing": true
+    },
+    "rulesDirectory": [
+      "node_modules/tslint-microsoft-contrib",
+      "node_modules/tslint-no-unused-expression-chai/rules"
+    ]
+  }
+  
